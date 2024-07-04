@@ -1,0 +1,22 @@
+﻿# Write your query or mutation here
+{
+  employees {
+    ... on Employee {
+      id
+      name
+      position
+      __typename
+    }
+    ... on FullTimeEmployee {
+      salary
+    }
+
+    ... on PartTimeEmployee {
+      hourlyRate
+    }
+
+    ... on PartTimeEmployee {
+      hourlyRate
+    }
+  }
+}
